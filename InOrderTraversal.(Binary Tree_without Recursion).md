@@ -20,7 +20,7 @@ class Solution {
            return res;
         
         Stack<TreeNode> temp = new Stack<TreeNode>();
-        
+        // will be all always true and it is used to iterate infinite until we use a break or system.exit() in the loop.
         while(true){
             
             if(root != null){
