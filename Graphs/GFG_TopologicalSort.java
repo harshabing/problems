@@ -138,7 +138,3 @@ class Main
   
     } 
 } 
-Python
-Output :
-
-Fol
