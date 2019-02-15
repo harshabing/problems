@@ -1,4 +1,4 @@
-  Algorithm :
+/*  Algorithm :
   Steps involved in finding the topological ordering of a DAG:
 
 Step-1: Compute in-degree (number of incoming edges) for each of the vertex present in the DAG and initialize the count of visited nodes as 0.
@@ -25,7 +25,7 @@ for each edge(src,dest) in Edges
     indegree[dest]++
 Time Complexity: O(V+E)
 
-
+*/
 
 
 // A Java program to print topological sorting of a graph 
