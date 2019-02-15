@@ -1,3 +1,42 @@
+# GeeksForGeeks
+
+## Graph Class
+
+// A Java program to print topological sorting of a graph 
+// using indegrees 
+import java.util.*; 
+  
+//Class to represent a graph 
+class Graph 
+{ 
+    int V;// No. of vertices 
+      
+    //An Array of List which contains  
+    //references to the Adjacency List of  
+    //each vertex 
+    List <Integer> adj[]; 
+    public Graph(int V)// Constructor 
+    { 
+        this.V = V; 
+        adj = new ArrayList[V]; 
+        for(int i = 0; i < V; i++) 
+            adj[i]=new ArrayList<Integer>(); 
+    } 
+      
+    // function to add an edge to graph 
+    public void addEdge(int u,int v) 
+    { 
+        adj[u].add(v); 
+    } 
+       
+    }
+
+
+
+# Tushar
+
+
+
 ## Graph Class
 
 import java.util.ArrayList;
