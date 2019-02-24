@@ -12,12 +12,13 @@ Following are implementations of simple Depth First Traversal. The C++ implement
 */
 
 // Java program to print DFS traversal from a given given graph 
+
 import java.io.*; 
 import java.util.*; 
   
 // This class represents a directed graph using adjacency list 
 // representation 
-class Graph 
+public class Graph 
 { 
     private int V;   // No. of vertices 
   
@@ -57,14 +58,18 @@ class Graph
     } 
   
     // The function to do DFS traversal. It uses recursive DFSUtil() 
-    void DFS(int v) 
+    void DFS() 
     { 
         // Mark all the vertices as not visited(set as 
-        // false by default in java) 
+        // false by default in java)
+        
         boolean visited[] = new boolean[V]; 
   
         // Call the recursive helper function to print DFS traversal 
-        DFSUtil(v, visited); 
+        for(int i =0;i<V;i++){
+            if(visited[i]!=true){
+         DFSUtil(i, visited);  }  
+        } 
     } 
   
     public static void main(String args[]) 
@@ -81,7 +86,6 @@ class Graph
         System.out.println("Following is Depth First Traversal "+ 
                            "(starting from vertex 2)"); 
   
-        g.DFS(2); 
+        g.DFS(); 
     } 
 } 
-
